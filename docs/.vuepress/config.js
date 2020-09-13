@@ -1,7 +1,8 @@
 module.exports = {
   title: '郑泽敏个人文档', // 设置网站标题
   // title: '文档',
-  base: '/vuePressDos/',
+  // base: '/vuePressDos/',   // github
+  base: '/',  //阿里云服务器
   description: '音乐博客', //描述
   dest: './dist',   // 设置输出目录
   port: 2333, //端口
