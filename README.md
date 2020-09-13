@@ -5,4 +5,4 @@ Building a platform component library using VuePress
 
 (2)npm run dos:dev
 
-URL：https://juejin.im/post/5aefc37a6fb9a07ab83df131
+URL：https://juejin.im/post/6854573219773415437
