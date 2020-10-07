@@ -6,25 +6,26 @@ module.exports = {
   description: '音乐博客', //描述
   dest: './dist',   // 设置输出目录
   port: 2333, //端口
- 
+
   themeConfig: { //主题配置
     // 添加导航栏
     nav: [
       { text: '主页', link: '/' }, // 导航条
       { text: '组件文档', link: '/baseComponents/' },
       { text: '知识库', link: '/knowledge/' },
-      { text: '接口对接规范', link: '/interfaceSpecification/' },
+      { text: '数据库', link: '/sql/' },
+      { text: '开发规范', link: '/devSpecification/' },
       {
         text: 'github',
         // 这里是下拉列表展现形式。
         items: [
-          { text: 'focus-outside', link: 'https://github.com/TaoXuSheng/focus-outside' },
-          { text: 'stylus-converter', link: 'https://github.com/TaoXuSheng/stylus-converter' },
+          { text: 'vuePress', link: 'https://github.com/git-Dignity/vuePressDos' },
+          { text: '个人音乐博客', link: 'https://github.com/git-Dignity/vueAndTsAndKoa2' },
         ]
       }
     ],
     // 为以下路由添加侧边栏
-    sidebar:{
+    sidebar: {
       '/baseComponents/': [
         {
           title: '布局类组件',
@@ -82,17 +83,85 @@ module.exports = {
           ]
         }
       ],
-      '/interfaceSpecification/': [
+      '/sql/': [
+        {
+          title: 'MYSQL',
+          collapsable: true,
+          children: [
+            'mysql/createTableStatute',
+            'mysql/indexStatute',
+            'mysql/sqlStatement',
+            'mysql/orm'
+          ]
+        }
+      ],
+      '/devSpecification/': [
+        {
+          title: '开发规范',
+          collapsable: true,
+          children: [
+            'base/namingStyle',
+            'base/codeFormat',
+            'base/dateTime',
+            'base/controlStatement',
+            'base/codeComment',
+            'base/order'
+          ]
+        },
         {
           title: '前后端对接规范',
           collapsable: true,
           children: [
-            'base/apiRequest',
-            'base/apiRespone',
-            'base/apiOther'
-           
+            'interfaceSpecification/apiRequest',
+            'interfaceSpecification/apiRespone',
+            'interfaceSpecification/apiOther'
+
           ]
-        }
+        },
+        {
+          title: '异常日志',
+          collapsable: true,
+          children: [
+            'err/errCode',
+            'err/errProcessing',
+            'err/errLog'
+          ]
+        },
+        {
+          title: '安全规约',
+          collapsable: true,
+          children: [
+            'safety/securityProtocol',
+          ]
+        },
+        {
+          title: '服务器',
+          collapsable: true,
+          children: [
+            'server/config'
+          ]
+        },
+        {
+          title: '设计规约',
+          collapsable: true,
+          children: [
+            'designSpecification/designSpecification'
+          ]
+        },
+        {
+          title: '专有名词解释',
+          collapsable: true,
+          children: [
+            'properNouns/explanation'
+          ]
+        },
+        {
+          title: 'HTML命名规范',
+          collapsable: true,
+          children: [
+            'htmlNameSpecification/htmlNameSpecification'
+          ]
+        },
       ]
     }
   }
