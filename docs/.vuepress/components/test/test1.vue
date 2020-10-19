@@ -16,7 +16,7 @@ import DtButton from '../src/button'
 export default {
   name: 'buttonWrap',
   components: {
-    DtButton
+    DtButton 
   }
 }
 </script>

@@ -9,6 +9,11 @@ import VueECharts from 'vue-echarts' //注册图表
 
 import './../.vuepress/public/css/index.css'
 
+// 郑泽敏的组件库
+import zzmcomponentlib from 'zzmcomponentlib'
+import  'zzmcomponentlib/lib/zzmcomponentlib.css'
+
+
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
   options, // 附加到根实例的一些选项
@@ -18,5 +23,6 @@ export default ({
   // ...做一些其他的应用级别的优化
   Vue.use(VueHighlightJS)
   Vue.use(Element)
+  Vue.use(zzmcomponentlib)
   Vue.component('chart', VueECharts)
 }

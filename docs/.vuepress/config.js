@@ -11,7 +11,7 @@ module.exports = {
     // 添加导航栏
     nav: [
       { text: '主页', link: '/' }, // 导航条
-      { text: '组件文档', link: '/baseComponents/' },
+      { text: '组件文档', link: '/componentDos/' },
       { text: '知识库', link: '/knowledge/' },
       { text: '数据库', link: '/sql/' },
       { text: '开发规范', link: '/devSpecification/' },
@@ -26,7 +26,15 @@ module.exports = {
     ],
     // 为以下路由添加侧边栏
     sidebar: {
-      '/baseComponents/': [
+      '/componentDos/': [
+        {
+          title: '指南',
+          collapsable: true,
+          children: [
+            'guide/install',
+            'guide/updateLog'
+          ]
+        },
         {
           title: '布局类组件',
           collapsable: true,
@@ -42,6 +50,7 @@ module.exports = {
           title: '可视化组件',
           collapsable: true,
           children: [
+            'visualization/button'
           ]
         },
         {
