@@ -21,6 +21,6 @@
     "less": "^3.0.2",
     "vue-echarts": "^3.0.7",
     "vuepress": "^1.5.2",
-    "zzmcomponentlib": "0.0.13"
+    "zzmcomponentlib": "0.0.14"
   }
 }
