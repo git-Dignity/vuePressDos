@@ -36,22 +36,17 @@ module.exports = {
           ]
         },
         {
-          title: '布局类组件',
-          collapsable: true,
-          children: [
-            'base/test1',
-            'base/test2',
-            'base/test3',
-            'base/test4',
-            'base/test5'
-          ]
-        },
-        {
           title: '可视化组件',
           collapsable: true,
           children: [
-            'visualization/button'
+            'visualization/button',
+            'visualization/turntable'
           ]
+        },
+        {
+          title: '布局类组件',
+          collapsable: true,
+          children: []
         },
         {
           title: '工具类组件',

@@ -3,7 +3,7 @@
 
 
 <Common-Democode title="基础用法" description="基础的按钮用法。">
-  <componentDos-visualization-Button></componentDos-visualization-Button>
+  <componentDos-visualization-button-Button></componentDos-visualization-button-Button>
   <highlight-code slot="codeText" lang="vue">
     <template>
       <div class="demo-button">
@@ -20,7 +20,7 @@
 </Common-Democode>
 
 <Common-Democode title="加载中" description="点击按钮后进行数据加载操作，在按钮上显示加载状态。（要设置为 loading 状态，只要设置loading属性为true即可）">
-  <componentDos-visualization-LoadingButton></componentDos-visualization-LoadingButton>
+  <componentDos-visualization-button-LoadingButton></componentDos-visualization-button-LoadingButton>
   <highlight-code slot="codeText" lang="vue">
     <template>
       <div class="demo-button">
@@ -46,7 +46,7 @@
 </Common-Democode>
 
 <Common-Democode title="不同尺寸" description="Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。（额外的尺寸：medium、small、mini，通过设置size属性来配置它们。）">
-  <componentDos-visualization-ButtonSize></componentDos-visualization-ButtonSize>
+  <componentDos-visualization-button-ButtonSize></componentDos-visualization-button-ButtonSize>
   <highlight-code slot="codeText" lang="vue">
     <template>
       <div class="demo-button">
@@ -62,10 +62,10 @@
 </Common-Democode>
 <br />
 
-### Attributes
+### Button Attributes
 
 | 参数       | 中文描述           | 类型         | 可选择         | 默认值         | 
 | ----------------- |:-------------:| -----------------:| --------------------:| --------:| 
-| size          | 尺寸 | string | medium / small / mini | -- |
-| type         | 类型      |   string |    primary / success / warning / danger / info    | -- |
-| loading        | 是否加载中状态       |    boolean |  -- | false
+| size          | 尺寸 | `string` | medium / small / mini | -- |
+| type         | 类型      |   `string` |    primary / success / warning / danger / info    | -- |
+| loading        | 是否加载中状态       |    `boolean` |  -- | false
