@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: /assets/my.jpg
 actionText: 前往 →
 actionLink: /componentDos/
 features:
