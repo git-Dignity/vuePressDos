@@ -1,5 +1,10 @@
+
 # 使用
+
+::: tip Tool
 对常用的方法进行封装使用。
+:::
+
 
 
 <Common-Democode title="使用" description="在项目中使用import进行引入使用。">

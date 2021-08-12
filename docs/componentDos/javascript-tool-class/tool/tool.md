@@ -32,7 +32,6 @@
       };
       
     </script>
-    </template>
   </highlight-code>
 </Common-Democode>
 
@@ -67,7 +66,6 @@
       };
       
     </script>
-    </template>
   </highlight-code>
 </Common-Democode>
 
@@ -409,27 +407,47 @@
 
 
 
+<Common-Democode title="formatDuration" description="如何获得给定毫秒数的可读格式？">
+   <componentDos-template-index :code="1"><div class="bold">myTool.formatDuration(ms: Number)</div></componentDos-template-index>
+  <highlight-code slot="codeText" lang="vue">
+      <script>
+    import { Tool } from "javascript-tool-class/src/App";
+      export default {
+        name: "Tool",
+        data() {
+          return {
+            myTool: new Tool()
+          };
+        },
+        methods:{
+          /**
+           * @description: 如何获得给定毫秒数的可读格式？
+           * @param {Number} ms 毫秒数
+           * @return { String }  1000ms = 1s
+           */    
+          formatDuration(ms) {
+              if (ms < 0) ms = -ms;
+              const time = {
+                  day: Math.floor(ms / 86400000),
+                  hour: Math.floor(ms / 3600000) % 24,
+                  minute: Math.floor(ms / 60000) % 60,
+                  second: Math.floor(ms / 1000) % 60,
+                  millisecond: Math.floor(ms) % 1000
+              };
+              return Object.entries(time)
+                  .filter(val => val[1] !== 0)
+                  .map(([key, val]) => `${val} ${key}${val !== 1 ? 's' : ''}`)
+                  .join(', ');
+          }
+        },
+        mounted:{
+            myTool.formatDuration(1001);   // 1 second, 1 millisecond
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br />
-
-### Button Attributes
-
-| 参数       | 中文描述           | 类型         | 可选择         | 默认值         | 
-| ----------------- |:-------------:| -----------------:| --------------------:| --------:| 
-| size          | 尺寸 | `string` | medium / small / mini | -- |
-| type         | 类型      |   `string` |    primary / success / warning / danger / info    | -- |
-| loading        | 是否加载中状态       |    `boolean` |  -- | false
+            myTool.formatDuration(34325055574);   // 397 days, 6 hours, 44 minutes, 15 seconds, 574 milliseconds
+        }
+      };
+      
+    </script>
+    </template>
+  </highlight-code>
+</Common-Democode>

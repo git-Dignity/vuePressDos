@@ -21,6 +21,7 @@
     "less": "^3.0.2",
     "vue-echarts": "^3.0.7",
     "vuepress": "^1.5.2",
+    "vuepress-plugin-fulltext-search": "^2.2.1",
     "zzmcomponentlib": "0.0.14"
   }
 }

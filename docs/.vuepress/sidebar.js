@@ -26,6 +26,21 @@ module.exports = {
             collapsable: true,
             children: [
               'javascript-tool-class/tool/use',
+              'javascript-tool-class/tool/hide',
+              'javascript-tool-class/tool/hasClass',
+              'javascript-tool-class/tool/toggleClass',
+              'javascript-tool-class/tool/getScrollPosition',
+              'javascript-tool-class/tool/elementContains',
+              'javascript-tool-class/tool/elementIsVisibleInViewport',
+              'javascript-tool-class/tool/getImages',
+              'javascript-tool-class/tool/detectDeviceType',
+              'javascript-tool-class/tool/currentURL',
+              'javascript-tool-class/tool/getURLParameters',
+              'javascript-tool-class/tool/off',
+              'javascript-tool-class/tool/formatDuration',
+              
+              
+
               'javascript-tool-class/tool/tool'
             ]
           },

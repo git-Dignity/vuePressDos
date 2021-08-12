@@ -16,5 +16,8 @@ module.exports = {
 
     // 为以下路由添加侧边栏
     sidebar
-  }
+  },
+  plugins:[
+    'fulltext-search' // 全文搜索
+  ] 
 }
